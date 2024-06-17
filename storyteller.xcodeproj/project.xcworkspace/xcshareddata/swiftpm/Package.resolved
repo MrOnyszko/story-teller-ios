@@ -1,0 +1,15 @@
+{
+  "originHash" : "23e6bd1e043288fff7f0991b44e0c6dcbd50ae267a2f80623baf036f1f42acba",
+  "pins" : [
+    {
+      "identity" : "mockswift",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:leoture/MockSwift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e4ea155754c1349ca8b4adb31afc138bf43499de"
+      }
+    }
+  ],
+  "version" : 3
+}
