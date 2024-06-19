@@ -3,7 +3,7 @@ import XCTest
 
 final class StoryMapperTest: XCTestCase {
 
-    func Given_has_entity_When_map_Then_return_model() throws {
+    func testGiven_has_entity_When_map_Then_return_model() throws {
         let entity = StoryEntity(
             id: "1",
             title: "Title",

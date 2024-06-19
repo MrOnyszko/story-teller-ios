@@ -4,7 +4,7 @@ import Translation
 
 struct AddStoryScreen: View {
     @EnvironmentObject var router: GoRouter
-    @ObservedObject var viewModel: AddStoryViewModel
+    @StateObject var viewModel: AddStoryViewModel
     
     var body: some View {
         AddStoryContent(

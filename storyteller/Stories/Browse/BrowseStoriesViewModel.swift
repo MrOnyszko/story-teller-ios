@@ -3,7 +3,9 @@ import SwiftUI
 
 class BrowseStoriesViewModel : ObservableObject {
 
-    @Published var state: BrowseStoriesState
+    @Published var state: BrowseStoriesState {
+        didSet { Logger.info(state) }
+    }
     
     private var getStoriesUseCase: GetStoriesUseCase
     private var removeStoryUseCase: RemoveStoryUseCase

@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 struct ViewStoryScreen: View {
-    @ObservedObject var viewModel: ViewStoryViewModel
+    @StateObject var viewModel: ViewStoryViewModel
     
     var body: some View {
         ViewStoryContent(state: viewModel.state)

@@ -17,3 +17,16 @@ struct StoryTranslation: Identifiable, Hashable, Equatable {
         self.createdAt = createdAt
     }
 }
+
+extension StoryTranslation {
+    static func _test() -> StoryTranslation {
+        return StoryTranslation(
+            id: "10",
+            storyId: "1",
+            languageCode: "en",
+            title: "Title",
+            content: "Content",
+            createdAt: Date(timeIntervalSince1970: 1718604164)
+        )
+    }
+}

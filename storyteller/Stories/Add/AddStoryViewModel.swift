@@ -5,7 +5,9 @@ import Translation
 
 class AddStoryViewModel : ObservableObject {
     
-    @Published var state: AddStoryState
+    @Published var state: AddStoryState {
+        didSet { Logger.info(state) }
+    }
     
     let didSaveStory = PassthroughSubject<Void, Never>()
     
@@ -71,14 +73,14 @@ class AddStoryViewModel : ObservableObject {
                 )
                 
                 for item in state.translations {
-                   let translation = try await addStoryTranslationUseCase.execute(
-                    storyId: story.id,
-                    title: item.title,
-                    content: item.content,
-                    languageCode: item.languageCode
-                   )
+                    let translation = try await addStoryTranslationUseCase.execute(
+                        storyId: story.id,
+                        title: item.title,
+                        content: item.content,
+                        languageCode: item.languageCode
+                    )
                     
-                   Logger.info(translation)
+                    Logger.info(translation)
                 }
                 
                 state.type = .loaded

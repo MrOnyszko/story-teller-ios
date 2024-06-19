@@ -1,4 +1,4 @@
-struct BrowseStoriesState: Hashable {
+struct BrowseStoriesState: Hashable, Equatable {
     var type: StateType = StateType.loading
     var stories: [Story] = []
     

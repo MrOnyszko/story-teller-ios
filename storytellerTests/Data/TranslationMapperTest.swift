@@ -3,7 +3,7 @@ import XCTest
 
 final class TranslationMapperTest: XCTestCase {
 
-    func Given_has_entity_When_map_Then_return_model() throws {
+    func test_Given_has_entity_When_map_Then_return_model() throws {
         let entity = TranslationEntity(
             id: "1",
             storyId: "2",

@@ -20,10 +20,11 @@
 		C00AF2002C200F7E00733BD8 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF1FF2C200F7E00733BD8 /* GeneratedMocks.swift */; };
 		C00AF2022C20190300733BD8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C00AF2012C20190300733BD8 /* Localizable.xcstrings */; };
 		C00AF2042C201C3100733BD8 /* BrowseStoriesViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2032C201C3100733BD8 /* BrowseStoriesViewModelTest.swift */; };
+		C00AF2062C22131A00733BD8 /* ViewStoryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2052C22131A00733BD8 /* ViewStoryViewModelTest.swift */; };
+		C00AF2082C2215DA00733BD8 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2072C2215DA00733BD8 /* XCTestCaseExtension.swift */; };
 		C09A8A282C1866DE004DFFF6 /* StorytellerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A8A272C1866DE004DFFF6 /* StorytellerApp.swift */; };
 		C09A8A2E2C1866DF004DFFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09A8A2D2C1866DF004DFFF6 /* Assets.xcassets */; };
 		C09A8A312C1866DF004DFFF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09A8A302C1866DF004DFFF6 /* Preview Assets.xcassets */; };
-		C09A8A3B2C1866E0004DFFF6 /* storytellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A8A3A2C1866E0004DFFF6 /* storytellerTests.swift */; };
 		C09A8A452C1866E0004DFFF6 /* storytellerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A8A442C1866E0004DFFF6 /* storytellerUITests.swift */; };
 		C09A8A472C1866E0004DFFF6 /* storytellerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A8A462C1866E0004DFFF6 /* storytellerUITestsLaunchTests.swift */; };
 		C09A8A592C1868F4004DFFF6 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A8A582C1868F4004DFFF6 /* Story.swift */; };
@@ -87,12 +88,13 @@
 		C00AF1FF2C200F7E00733BD8 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		C00AF2012C20190300733BD8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		C00AF2032C201C3100733BD8 /* BrowseStoriesViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseStoriesViewModelTest.swift; sourceTree = "<group>"; };
+		C00AF2052C22131A00733BD8 /* ViewStoryViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStoryViewModelTest.swift; sourceTree = "<group>"; };
+		C00AF2072C2215DA00733BD8 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
 		C09A8A242C1866DE004DFFF6 /* storyteller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyteller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09A8A272C1866DE004DFFF6 /* StorytellerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorytellerApp.swift; sourceTree = "<group>"; };
 		C09A8A2D2C1866DF004DFFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C09A8A302C1866DF004DFFF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C09A8A362C1866E0004DFFF6 /* storytellerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storytellerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C09A8A3A2C1866E0004DFFF6 /* storytellerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storytellerTests.swift; sourceTree = "<group>"; };
 		C09A8A402C1866E0004DFFF6 /* storytellerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storytellerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09A8A442C1866E0004DFFF6 /* storytellerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storytellerUITests.swift; sourceTree = "<group>"; };
 		C09A8A462C1866E0004DFFF6 /* storytellerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storytellerUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		C00AF1EF2C2007ED00733BD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C00AF2052C22131A00733BD8 /* ViewStoryViewModelTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,7 +300,7 @@
 				C00AF1EE2C2007E200733BD8 /* Stories */,
 				C00AF1ED2C2007D300733BD8 /* Domain */,
 				C00AF1EC2C2007CD00733BD8 /* Data */,
-				C09A8A3A2C1866E0004DFFF6 /* storytellerTests.swift */,
+				C00AF2072C2215DA00733BD8 /* XCTestCaseExtension.swift */,
 			);
 			path = storytellerTests;
 			sourceTree = "<group>";
@@ -606,11 +609,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00AF2082C2215DA00733BD8 /* XCTestCaseExtension.swift in Sources */,
 				C00AF1F82C200A6D00733BD8 /* GetStoriesUseCaseTest.swift in Sources */,
 				C00AF1F32C20081D00733BD8 /* StoryMapperTest.swift in Sources */,
 				C00AF2042C201C3100733BD8 /* BrowseStoriesViewModelTest.swift in Sources */,
-				C09A8A3B2C1866E0004DFFF6 /* storytellerTests.swift in Sources */,
 				C00AF1F52C2009F400733BD8 /* TranslationMapperTest.swift in Sources */,
+				C00AF2062C22131A00733BD8 /* ViewStoryViewModelTest.swift in Sources */,
 				C00AF2002C200F7E00733BD8 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

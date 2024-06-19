@@ -15,3 +15,15 @@ struct Story: Identifiable, Hashable, Equatable {
         self.createdAt = createdAt
     }
 }
+
+extension Story {
+    static func _test() -> Story {
+        return Story(
+            id: "1",
+            title: "Title",
+            content: "Content",
+            languageCode: "en",
+            createdAt: Date(timeIntervalSince1970: 1718604164)
+        )
+    }
+}

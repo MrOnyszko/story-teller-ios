@@ -1,6 +1,6 @@
 import Foundation
 
-struct AddStoryState: Hashable {
+struct AddStoryState: Hashable, Equatable {
     var type: StateType = .loaded
     var title: String = ""
     var content: String = ""

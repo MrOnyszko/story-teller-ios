@@ -3,7 +3,9 @@ import SwiftUI
 
 class ViewStoryViewModel: ObservableObject {
     
-    @Published var state: ViewStoryState
+    @Published var state: ViewStoryState {
+        didSet { Logger.info(state) }
+    }
     
     private let getStoryUseCase: GetStoryUseCase
     
