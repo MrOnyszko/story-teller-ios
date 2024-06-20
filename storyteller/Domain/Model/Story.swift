@@ -1,6 +1,6 @@
 import Foundation
 
-struct Story: Identifiable, Hashable, Equatable {
+struct Story: Identifiable, Hashable {
     let id: String
     let title: String
     let content: String
@@ -17,13 +17,19 @@ struct Story: Identifiable, Hashable, Equatable {
 }
 
 extension Story {
-    static func _test() -> Story {
+    static func _test(
+        id: String? = nil,
+        title: String? = nil,
+        content: String? = nil,
+        languageCode: String? = nil,
+        createdAt: Date? = nil
+    ) -> Story {
         return Story(
-            id: "1",
-            title: "Title",
-            content: "Content",
-            languageCode: "en",
-            createdAt: Date(timeIntervalSince1970: 1718604164)
+            id: id ?? "1",
+            title: title ?? "Title",
+            content: content ?? "Content",
+            languageCode: languageCode ?? "en",
+            createdAt: createdAt ?? Date(timeIntervalSince1970: 1718604164)
         )
     }
 }

@@ -22,7 +22,7 @@ class GetItModule {
         let getIt = GetItContainer.shared
         
         getIt.registerFactory(type: OllamaService.self) { _ in
-            OllamaService(session: URLSession.shared)
+            OllamaServiceImpl(session: URLSession.shared)
         }
         
         getIt.registerFactory(type: StoryMapper.self) { _ in

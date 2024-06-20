@@ -1,6 +1,6 @@
 import Foundation
 
-struct ViewStoryState: Hashable, Equatable {
+struct ViewStoryState: Hashable {
     var type: StateType = .loading
     var storyId: String
     var story: Story? = nil

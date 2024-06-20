@@ -13,7 +13,7 @@ protocol StoriesDataSource {
     
     func addStory(title: String, content: String, languageCode: String) async throws -> Story
     
-    func addTranslation(storyId: String, langaugeCode: String, title: String, content: String) async throws -> StoryTranslation
+    func addTranslation(storyId: String, languageCode: String, title: String, content: String) async throws -> StoryTranslation
     
     func removeStory(storyId: String) async throws
 }

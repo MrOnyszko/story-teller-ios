@@ -134,6 +134,31 @@ extension Then where WrappedType == GetStoryUseCase {
   }
 }
 
+// MARK: - OllamaService
+extension Mock: OllamaService where WrappedType == OllamaService {
+  public func translate(model: String, prompt: String) throws -> String {
+    try mockedThrowable(model, prompt)
+  }
+}
+
+extension Given where WrappedType == OllamaService {
+  public func translate(model: MockSwift.Predicate<String>, prompt: MockSwift.Predicate<String>) -> Mockable<String> {
+    mockable(model, prompt)
+  }
+  public func translate(model: String, prompt: String) -> Mockable<String> {
+    mockable(model, prompt)
+  }
+}
+
+extension Then where WrappedType == OllamaService {
+  public func translate(model: MockSwift.Predicate<String>, prompt: MockSwift.Predicate<String>) -> Verifiable<String> {
+    verifiable(model, prompt)
+  }
+  public func translate(model: String, prompt: String) -> Verifiable<String> {
+    verifiable(model, prompt)
+  }
+}
+
 // MARK: - RemoveStoryUseCase
 extension Mock: RemoveStoryUseCase where WrappedType == RemoveStoryUseCase {
   public func execute(storyId: String) throws {
@@ -176,8 +201,8 @@ extension Mock: StoriesDataSource where WrappedType == StoriesDataSource {
   public func addStory(title: String, content: String, languageCode: String) throws -> Story {
     try mockedThrowable(title, content, languageCode)
   }
-  public func addTranslation(storyId: String, langaugeCode: String, title: String, content: String) throws -> StoryTranslation {
-    try mockedThrowable(storyId, langaugeCode, title, content)
+  public func addTranslation(storyId: String, languageCode: String, title: String, content: String) throws -> StoryTranslation {
+    try mockedThrowable(storyId, languageCode, title, content)
   }
   public func removeStory(storyId: String) throws {
     try mockedThrowable(storyId)
@@ -209,11 +234,11 @@ extension Given where WrappedType == StoriesDataSource {
   public func addStory(title: String, content: String, languageCode: String) -> Mockable<Story> {
     mockable(title, content, languageCode)
   }
-  public func addTranslation(storyId: MockSwift.Predicate<String>, langaugeCode: MockSwift.Predicate<String>, title: MockSwift.Predicate<String>, content: MockSwift.Predicate<String>) -> Mockable<StoryTranslation> {
-    mockable(storyId, langaugeCode, title, content)
+  public func addTranslation(storyId: MockSwift.Predicate<String>, languageCode: MockSwift.Predicate<String>, title: MockSwift.Predicate<String>, content: MockSwift.Predicate<String>) -> Mockable<StoryTranslation> {
+    mockable(storyId, languageCode, title, content)
   }
-  public func addTranslation(storyId: String, langaugeCode: String, title: String, content: String) -> Mockable<StoryTranslation> {
-    mockable(storyId, langaugeCode, title, content)
+  public func addTranslation(storyId: String, languageCode: String, title: String, content: String) -> Mockable<StoryTranslation> {
+    mockable(storyId, languageCode, title, content)
   }
   public func removeStory(storyId: MockSwift.Predicate<String>) -> Mockable<Void> {
     mockable(storyId)
@@ -248,11 +273,11 @@ extension Then where WrappedType == StoriesDataSource {
   public func addStory(title: String, content: String, languageCode: String) -> Verifiable<Story> {
     verifiable(title, content, languageCode)
   }
-  public func addTranslation(storyId: MockSwift.Predicate<String>, langaugeCode: MockSwift.Predicate<String>, title: MockSwift.Predicate<String>, content: MockSwift.Predicate<String>) -> Verifiable<StoryTranslation> {
-    verifiable(storyId, langaugeCode, title, content)
+  public func addTranslation(storyId: MockSwift.Predicate<String>, languageCode: MockSwift.Predicate<String>, title: MockSwift.Predicate<String>, content: MockSwift.Predicate<String>) -> Verifiable<StoryTranslation> {
+    verifiable(storyId, languageCode, title, content)
   }
-  public func addTranslation(storyId: String, langaugeCode: String, title: String, content: String) -> Verifiable<StoryTranslation> {
-    verifiable(storyId, langaugeCode, title, content)
+  public func addTranslation(storyId: String, languageCode: String, title: String, content: String) -> Verifiable<StoryTranslation> {
+    verifiable(storyId, languageCode, title, content)
   }
   public func removeStory(storyId: MockSwift.Predicate<String>) -> Verifiable<Void> {
     verifiable(storyId)

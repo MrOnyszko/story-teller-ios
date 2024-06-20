@@ -15,7 +15,7 @@ final class AddStoryTranslationUseCaseImpl: AddStoryTranslationUseCase {
     func execute(storyId: String, title: String, content: String, languageCode: String) async throws -> StoryTranslation {
         return try await storiesDataSource.addTranslation(
             storyId: storyId,
-            langaugeCode: languageCode,
+            languageCode: languageCode,
             title: title,
             content: content
         )

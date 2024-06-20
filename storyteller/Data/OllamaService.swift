@@ -1,6 +1,11 @@
 import Foundation
 
-class OllamaService {
+// sourcery: AutoMockable
+protocol OllamaService {
+    func translate(model: String, prompt: String) async throws -> String
+}
+
+class OllamaServiceImpl: OllamaService {
     private let session: URLSession
     
     init(session: URLSession) {

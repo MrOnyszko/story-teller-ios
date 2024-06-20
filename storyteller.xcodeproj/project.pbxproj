@@ -22,6 +22,13 @@
 		C00AF2042C201C3100733BD8 /* BrowseStoriesViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2032C201C3100733BD8 /* BrowseStoriesViewModelTest.swift */; };
 		C00AF2062C22131A00733BD8 /* ViewStoryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2052C22131A00733BD8 /* ViewStoryViewModelTest.swift */; };
 		C00AF2082C2215DA00733BD8 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2072C2215DA00733BD8 /* XCTestCaseExtension.swift */; };
+		C00AF20C2C240B8200733BD8 /* GetStoryUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF20B2C240B8200733BD8 /* GetStoryUseCaseTest.swift */; };
+		C00AF20E2C240B9900733BD8 /* AddStoryUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF20D2C240B9900733BD8 /* AddStoryUseCaseTest.swift */; };
+		C00AF2102C240BA900733BD8 /* RemoveStoryUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF20F2C240BA900733BD8 /* RemoveStoryUseCaseTest.swift */; };
+		C00AF2122C240BBA00733BD8 /* GetLanguagesUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2112C240BBA00733BD8 /* GetLanguagesUseCaseTest.swift */; };
+		C00AF2142C240BCA00733BD8 /* TranslateTextUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2132C240BCA00733BD8 /* TranslateTextUseCaseTest.swift */; };
+		C00AF2162C240BDE00733BD8 /* AddStoryTranslationUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2152C240BDE00733BD8 /* AddStoryTranslationUseCaseTest.swift */; };
+		C00AF2182C24122B00733BD8 /* AddStoryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF2172C24122B00733BD8 /* AddStoryViewModelTest.swift */; };
 		C09A8A282C1866DE004DFFF6 /* StorytellerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09A8A272C1866DE004DFFF6 /* StorytellerApp.swift */; };
 		C09A8A2E2C1866DF004DFFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09A8A2D2C1866DF004DFFF6 /* Assets.xcassets */; };
 		C09A8A312C1866DF004DFFF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09A8A302C1866DF004DFFF6 /* Preview Assets.xcassets */; };
@@ -90,6 +97,13 @@
 		C00AF2032C201C3100733BD8 /* BrowseStoriesViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseStoriesViewModelTest.swift; sourceTree = "<group>"; };
 		C00AF2052C22131A00733BD8 /* ViewStoryViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStoryViewModelTest.swift; sourceTree = "<group>"; };
 		C00AF2072C2215DA00733BD8 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
+		C00AF20B2C240B8200733BD8 /* GetStoryUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStoryUseCaseTest.swift; sourceTree = "<group>"; };
+		C00AF20D2C240B9900733BD8 /* AddStoryUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryUseCaseTest.swift; sourceTree = "<group>"; };
+		C00AF20F2C240BA900733BD8 /* RemoveStoryUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveStoryUseCaseTest.swift; sourceTree = "<group>"; };
+		C00AF2112C240BBA00733BD8 /* GetLanguagesUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguagesUseCaseTest.swift; sourceTree = "<group>"; };
+		C00AF2132C240BCA00733BD8 /* TranslateTextUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateTextUseCaseTest.swift; sourceTree = "<group>"; };
+		C00AF2152C240BDE00733BD8 /* AddStoryTranslationUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryTranslationUseCaseTest.swift; sourceTree = "<group>"; };
+		C00AF2172C24122B00733BD8 /* AddStoryViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryViewModelTest.swift; sourceTree = "<group>"; };
 		C09A8A242C1866DE004DFFF6 /* storyteller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyteller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09A8A272C1866DE004DFFF6 /* StorytellerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorytellerApp.swift; sourceTree = "<group>"; };
 		C09A8A2D2C1866DF004DFFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -221,6 +235,7 @@
 		C00AF1F02C2007F100733BD8 /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				C00AF2172C24122B00733BD8 /* AddStoryViewModelTest.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -237,6 +252,12 @@
 			isa = PBXGroup;
 			children = (
 				C00AF1F72C200A6D00733BD8 /* GetStoriesUseCaseTest.swift */,
+				C00AF20B2C240B8200733BD8 /* GetStoryUseCaseTest.swift */,
+				C00AF20D2C240B9900733BD8 /* AddStoryUseCaseTest.swift */,
+				C00AF20F2C240BA900733BD8 /* RemoveStoryUseCaseTest.swift */,
+				C00AF2112C240BBA00733BD8 /* GetLanguagesUseCaseTest.swift */,
+				C00AF2132C240BCA00733BD8 /* TranslateTextUseCaseTest.swift */,
+				C00AF2152C240BDE00733BD8 /* AddStoryTranslationUseCaseTest.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -609,12 +630,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00AF2162C240BDE00733BD8 /* AddStoryTranslationUseCaseTest.swift in Sources */,
 				C00AF2082C2215DA00733BD8 /* XCTestCaseExtension.swift in Sources */,
 				C00AF1F82C200A6D00733BD8 /* GetStoriesUseCaseTest.swift in Sources */,
+				C00AF2122C240BBA00733BD8 /* GetLanguagesUseCaseTest.swift in Sources */,
 				C00AF1F32C20081D00733BD8 /* StoryMapperTest.swift in Sources */,
 				C00AF2042C201C3100733BD8 /* BrowseStoriesViewModelTest.swift in Sources */,
 				C00AF1F52C2009F400733BD8 /* TranslationMapperTest.swift in Sources */,
+				C00AF2102C240BA900733BD8 /* RemoveStoryUseCaseTest.swift in Sources */,
+				C00AF2182C24122B00733BD8 /* AddStoryViewModelTest.swift in Sources */,
+				C00AF20E2C240B9900733BD8 /* AddStoryUseCaseTest.swift in Sources */,
 				C00AF2062C22131A00733BD8 /* ViewStoryViewModelTest.swift in Sources */,
+				C00AF2142C240BCA00733BD8 /* TranslateTextUseCaseTest.swift in Sources */,
+				C00AF20C2C240B8200733BD8 /* GetStoryUseCaseTest.swift in Sources */,
 				C00AF2002C200F7E00733BD8 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 import Foundation
 
-struct AddStoryState: Hashable, Equatable {
+struct AddStoryState: Hashable {
     var type: StateType = .loaded
     var title: String = ""
     var content: String = ""
@@ -11,10 +11,14 @@ struct AddStoryState: Hashable, Equatable {
     enum StateType {
         case loading, submitting, translating, loaded, error
     }
+    
+    enum SideEffect {
+        case closeScreen
+    }
 }
 
 struct TranslaionItem: Identifiable, Hashable {
-    var id: String = UUID().uuidString
+    var id: String
     var title: String
     var content: String
     var languageCode: String

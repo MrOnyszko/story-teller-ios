@@ -41,7 +41,6 @@ extension XCTestCase {
         XCTAssertEqual(receivedValues, values, "Publisher emitted unexpected values", file: file, line: line)
     }
     
-    
     func XCTAssertThrowsErrorAsync<T, R>(
         _ expression: @autoclosure () async throws -> T,
         _ errorThrown: @autoclosure () -> R,

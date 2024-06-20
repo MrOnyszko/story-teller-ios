@@ -9,7 +9,7 @@ class AddStoryViewModel : ObservableObject {
         didSet { Logger.info(state) }
     }
     
-    let didSaveStory = PassthroughSubject<Void, Never>()
+    let didSaveStory = PassthroughSubject<AddStoryState.SideEffect, Never>()
     
     private let addStoryUseCase: AddStoryUseCase
     private let addStoryTranslationUseCase: AddStoryTranslationUseCase
@@ -45,7 +45,7 @@ class AddStoryViewModel : ObservableObject {
                     .filter { it in it != state.langauge }
                     .map { locale in
                         TranslaionItem(
-                            id: UUID().uuidString,
+                            id: locale.languageCode,
                             title: "",
                             content: "",
                             languageCode: locale.languageCode
@@ -85,7 +85,7 @@ class AddStoryViewModel : ObservableObject {
                 
                 state.type = .loaded
                 
-                didSaveStory.send(())
+                didSaveStory.send(AddStoryState.SideEffect.closeScreen)
                 
                 Logger.info(story)
             } catch let error {

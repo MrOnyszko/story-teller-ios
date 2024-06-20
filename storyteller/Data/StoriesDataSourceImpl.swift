@@ -55,8 +55,8 @@ final class StoriesDataSourceImpl: StoriesDataSource {
         return storyMapper.map(entity: newStory)
     }
     
-    func addTranslation(storyId: String, langaugeCode: String, title: String, content: String) async throws -> StoryTranslation {
-        let newTranslation = TranslationEntity(id: UUID().uuidString, storyId: storyId, languageCode: langaugeCode, title: title, content: content, createdAt: Date())
+    func addTranslation(storyId: String, languageCode: String, title: String, content: String) async throws -> StoryTranslation {
+        let newTranslation = TranslationEntity(id: UUID().uuidString, storyId: storyId, languageCode: languageCode, title: title, content: content, createdAt: Date())
         modelContext.insert(newTranslation)
         try modelContext.save()
         return translationMapper.map(entity: newTranslation)
