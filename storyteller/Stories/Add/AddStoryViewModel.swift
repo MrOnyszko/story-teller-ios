@@ -85,7 +85,7 @@ class AddStoryViewModel : ObservableObject {
                 
                 state.type = .loaded
                 
-                didSaveStory.send(AddStoryState.SideEffect.closeScreen)
+                didSaveStory.send(AddStoryState.SideEffect.closeScreen(story: story))
                 
                 Logger.info(story)
             } catch let error {

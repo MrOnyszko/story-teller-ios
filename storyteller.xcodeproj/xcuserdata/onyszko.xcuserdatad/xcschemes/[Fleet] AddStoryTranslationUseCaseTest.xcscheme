@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C09A8A352C1866E0004DFFF6"
+               BuildableName = "storytellerTests.xctest"
+               BlueprintName = "storytellerTests"
+               ReferencedContainer = "container:storyteller.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference>
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C09A8A352C1866E0004DFFF6"
+               BuildableName = "storytellerTests.xctest"
+               BlueprintName = "storytellerTests"
+               ReferencedContainer = "container:storyteller.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/onyszko/Documents/projects/story-teller-project/story-teller-ios/storyteller"
+      allowLocationSimulation = "YES">
+   </LaunchAction>
+</Scheme>

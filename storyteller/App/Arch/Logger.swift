@@ -17,7 +17,7 @@ enum LogLevel {
 
 class Logger {
     static func info(_ message: Any) {
-        log(message, level: .info)
+//        log(message, level: .info)
     }
     
     static func warning(_ message: Any) {

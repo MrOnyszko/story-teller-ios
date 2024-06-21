@@ -22,17 +22,19 @@ struct AppScreen: View {
     let navigationDestinationFactory: NavigationDestinationFactory
     
     var body: some View {
-        NavigationStack(
-            path: $router.path,
-            root: {
-                BrowseStoriesRoute().build(getIt: getIt)
-                    .navigationDestination(
-                        for: GoRouter.RouteDestination.self,
-                        destination: navigationDestinationFactory.create
-                    )
-            }
-        )
-        .environmentObject(router)
+        SnackbarHost {
+            NavigationStack(
+                path: $router.path,
+                root: {
+                    BrowseStoriesRoute().build(getIt: getIt)
+                        .navigationDestination(
+                            for: GoRouter.RouteDestination.self,
+                            destination: navigationDestinationFactory.create
+                        )
+                }
+            )
+            .environmentObject(router)
+        }
     }
 }
 

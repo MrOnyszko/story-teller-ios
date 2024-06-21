@@ -16,8 +16,11 @@ struct AddStoryScreen: View {
             onTranslatePressed: viewModel.translate,
             onLanguageChange: viewModel.filterTranslations
         )
-        .onReceive(viewModel.didSaveStory) { _ in
-            router.back()
+        .onReceive(viewModel.didSaveStory) { effect in
+            switch effect {
+            case AddStoryState.SideEffect.closeScreen(let story):
+                router.back(type: AddStoryResult.self, value: AddStoryResult(story: story))
+            }
         }
         .onAppear(perform: viewModel.load)
     }
@@ -50,7 +53,7 @@ struct AddStoryContent: View {
                     TextField("story_content_input", text: contentBinding, axis: .vertical)
                 }
             )
-
+            
             Section(header: Text("translations_label")) {
                 ForEach(state.translations) { translation in
                     HStack {

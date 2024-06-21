@@ -130,6 +130,22 @@
         }
       }
     },
+    "story_added" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Story added!"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historia dodana!"
+          }
+        }
+      }
+    },
     "story_content_input" : {
       "localizations" : {
         "en" : {

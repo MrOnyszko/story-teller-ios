@@ -13,7 +13,7 @@ struct AddStoryState: Hashable {
     }
     
     enum SideEffect {
-        case closeScreen
+        case closeScreen(story: Story)
     }
 }
 

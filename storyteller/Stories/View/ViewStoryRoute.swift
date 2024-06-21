@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct ViewStoryRoute: Route {
+struct ViewStoryRoute: Route {    
     var name: String = "view-story"
     var storyId: String
     

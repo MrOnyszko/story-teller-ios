@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00871C72C257D3400B5F489 /* AddStoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00871C62C257D3400B5F489 /* AddStoryResult.swift */; };
+		C00871C92C25B42100B5F489 /* Snackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00871C82C25B42100B5F489 /* Snackbar.swift */; };
 		C00AF1DE2C1FF6D100733BD8 /* GetItModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF1DD2C1FF6D100733BD8 /* GetItModule.swift */; };
 		C00AF1E12C1FFB9500733BD8 /* StoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF1E02C1FFB9500733BD8 /* StoryEntity.swift */; };
 		C00AF1E32C1FFBA800733BD8 /* TranslationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AF1E22C1FFBA800733BD8 /* TranslationEntity.swift */; };
@@ -83,6 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C00871C62C257D3400B5F489 /* AddStoryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryResult.swift; sourceTree = "<group>"; };
+		C00871C82C25B42100B5F489 /* Snackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snackbar.swift; sourceTree = "<group>"; };
 		C00AF1DD2C1FF6D100733BD8 /* GetItModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetItModule.swift; sourceTree = "<group>"; };
 		C00AF1E02C1FFB9500733BD8 /* StoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryEntity.swift; sourceTree = "<group>"; };
 		C00AF1E22C1FFBA800733BD8 /* TranslationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEntity.swift; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 				C09A8A742C1EEE7E004DFFF6 /* AddStoryViewModel.swift */,
 				C09A8A782C1EEF33004DFFF6 /* AddStoryState.swift */,
 				C09A8A8F2C1F1E1B004DFFF6 /* AddStoryRoute.swift */,
+				C00871C62C257D3400B5F489 /* AddStoryResult.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 			children = (
 				C09A8A942C1F3ED9004DFFF6 /* StoryItem.swift */,
 				C09A8A962C1F3F2D004DFFF6 /* ErrorView.swift */,
+				C00871C82C25B42100B5F489 /* Snackbar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -590,6 +596,7 @@
 			files = (
 				C09A8A752C1EEE7E004DFFF6 /* AddStoryViewModel.swift in Sources */,
 				C09A8A8E2C1F1E01004DFFF6 /* BrowseStoriesRoute.swift in Sources */,
+				C00871C92C25B42100B5F489 /* Snackbar.swift in Sources */,
 				C09A8A852C1F03CA004DFFF6 /* ViewStoryViewModel.swift in Sources */,
 				C09A8A642C187207004DFFF6 /* AddStoryUseCase.swift in Sources */,
 				C00AF1E62C1FFC3F00733BD8 /* StoryMapper.swift in Sources */,
@@ -608,6 +615,7 @@
 				C09A8A282C1866DE004DFFF6 /* StorytellerApp.swift in Sources */,
 				C09A8A9B2C1F4BB8004DFFF6 /* GetLanguagesUseCase.swift in Sources */,
 				C09A8A7B2C1EF74C004DFFF6 /* GoRouter.swift in Sources */,
+				C00871C72C257D3400B5F489 /* AddStoryResult.swift in Sources */,
 				C09A8A602C186BB8004DFFF6 /* StoriesDataSource.swift in Sources */,
 				C00AF1E82C1FFC8D00733BD8 /* TranslationMapper.swift in Sources */,
 				C09A8A6D2C1EC3F1004DFFF6 /* RemoveStoryUseCase.swift in Sources */,

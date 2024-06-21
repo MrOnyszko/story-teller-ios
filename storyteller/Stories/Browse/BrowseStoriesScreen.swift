@@ -3,6 +3,7 @@ import SwiftUI
 
 struct BrowseStoriesScreen: View {
     @EnvironmentObject var router: GoRouter
+    @EnvironmentObject var snackbar: SnackbarController
     @StateObject var viewModel: BrowseStoriesViewModel
     
     var body: some View {
@@ -16,6 +17,10 @@ struct BrowseStoriesScreen: View {
                 router.go(to: AddStoryRoute())
             }
         )
+        .onReceiveResult(router: router, type: AddStoryResult.self) { result in
+            Logger.warning(String(describing: result))
+            snackbar.show(data: SnackbarData(message: "story_added", style: SnackbarStyle.success))
+        }
         .onAppear(perform: viewModel.load)
     }
 }
